@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jquery Clone</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://code.jquery.com/jquery-2.2.4.js" integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI="
+        crossorigin="anonymous" defer></script>
+   
+</head>
+<body>
+    <header class="search-header">
+    
+        <input class="search-header__input" type="text" placeholder="Search an artist">
+    
+        <svg class="search-header__icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+            <path
+                d="M23.809 21.646l-6.205-6.205c1.167-1.605 1.857-3.579 1.857-5.711 0-5.365-4.365-9.73-9.731-9.73-5.365 0-9.73 4.365-9.73 9.73 0 5.366 4.365 9.73 9.73 9.73 2.034 0 3.923-.627 5.487-1.698l6.238 6.238 2.354-2.354zm-20.955-11.916c0-3.792 3.085-6.877 6.877-6.877s6.877 3.085 6.877 6.877-3.085 6.877-6.877 6.877c-3.793 0-6.877-3.085-6.877-6.877z" />
+        </svg>
+    
+        <div class="search-header__results-display">
+            <div class="results-flex">
+                <p cxlass="result">Results: </p>
+                <p class="count"></p>
+    
+            </div>
+        </div>
+        <div class="search-header__loading-animation-div">
+            <div class="search-header__loading">
+            </div>
+        </div>
+    
+    </header>
+    <section class="albums-container">
+    
+        <h2 class="albums-container__h2">Search albums by artist's name</h2>
+    
+    </section>
+    
+   
+    <template id="album-item-template">
+        <div class="album-card">
+            <img alt="" class="album-img">
+            <div class="album-item-row">
+                <p class="label">Artist:</p>
+                <p class="artist-name"></p>
+            </div>
+            <div class="album-item-row">
+                <p class="label">Album:</p>
+                <p class="album-name"></p>
+            </div>
+            <div class="album-item-row">
+                <p class="label">Genre:</p>
+                <p class="album-genre"></p>
+            </div>
+            <div class="album-item-row">
+                <p class="label">No. of tracks:</p>
+                <p class="track-count"></p>
+            </div>
+            <div class="album-item-row">
+                <p class="label">Copyright:</p>
+                <p class="album-copyright"></p>
+            </div>
+        </div>
+    </template>
+    <script src="./index.js" defer></script>
+</body>
+</html>
